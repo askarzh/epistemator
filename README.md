@@ -9,11 +9,18 @@ Epistemic analysis tools for [Claude Code](https://claude.ai/code) — process i
 
 ## Why
 
-You can summarize anything in seconds. So what? A summary tells you what someone said. It doesn't tell you whether it's true, what's missing, why it matters, or what you'd see if you looked at it differently.
+**AI gives you summaries. You want the truth.**
 
-We're drowning in content — articles, talks, proposals, strategies — and the default AI response is to compress it. But compression isn't thinking. A summary of a bad argument is still a bad argument. A summary of a complex decision hides the tensions that actually matter.
+You asked AI to review an article. It gave you five bullet points. Now what? You can't defend a position with a summary. You can't make a decision based on a shorter version of someone else's thinking. You can't spot a flaw that was faithfully preserved in compressed form.
 
-Epistemator doesn't summarize. It *examines*. Each framework asks a different question that a summary never would: Is this claim actually defensible? What are the hidden assumptions? Where is the real value? What would we see if we stopped thinking about it the usual way?
+Summaries tell you *what was said*. They never tell you *why you should believe it*.
+
+Epistemator runs ideas through philosophical frameworks that do what summaries can't:
+
+- **Stress-test the argument** — is this actually defensible? (Scholastic)
+- **Expose the structure** — what are the real moving parts? (Cartesian)
+- **Find the value** — where does quality actually lie? (Pirsig)
+- **Challenge the framing** — what would we see from a different angle? (Six Hats)
 
 ## Quick Start
 
