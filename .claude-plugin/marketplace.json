@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "askarzh/epistemator",
+  "name": "epistemator",
   "description": "Epistemic analysis tools — process ideas, texts, and questions through philosophical frameworks",
   "owner": {
     "name": "Askar"
@@ -13,10 +13,7 @@
       "author": {
         "name": "Askar"
       },
-      "source": {
-        "source": "github",
-        "repo": "askarzh/epistemator"
-      },
+      "source": ".",
       "category": "productivity",
       "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
     }
