@@ -94,4 +94,4 @@ When the user requests interactive/Socratic analysis:
 **Weak fit:**
 - Formal logical arguments (use Scholastic instead)
 - Systems decomposition (use Cartesian Reductionism instead)
-- Generating creative alternatives (use Lateral Analysis instead)
+- Generating creative alternatives (use Six Thinking Hats instead)

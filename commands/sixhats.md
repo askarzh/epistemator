@@ -1,9 +1,9 @@
 ---
-description: Generate alternatives through Lateral Analysis (De Bono)
+description: Analyze through Six Thinking Hats (De Bono)
 argument-hint: [--interactive] <input>
 ---
 
-Invoke the `lateral` skill to analyze the user's input.
+Invoke the `sixhats` skill to analyze the user's input.
 
 If the user includes `--interactive` in their arguments, use Interactive Mode as described in the skill. Otherwise, use Structured Mode.
 

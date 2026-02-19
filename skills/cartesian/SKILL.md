@@ -99,4 +99,4 @@ When the user requests interactive/Socratic analysis:
 **Weak fit:**
 - Value judgments or quality assessments (use Pirsig instead)
 - Evaluating the truth of a specific proposition (use Scholastic instead)
-- Generating creative alternatives (use Lateral Analysis instead)
+- Generating creative alternatives (use Six Thinking Hats instead)

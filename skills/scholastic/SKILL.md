@@ -94,6 +94,6 @@ When the user requests interactive/Socratic analysis:
 - Any input where "Is X true/valid/justified?" is the core question
 
 **Weak fit:**
-- Creative ideation (use Lateral Analysis instead)
+- Creative ideation (use Six Thinking Hats instead)
 - Systems decomposition (use Cartesian Reductionism instead)
 - Value/quality judgments without propositional structure (use Pirsig instead)
