@@ -18,7 +18,8 @@ Epistemator doesn't summarize. It *examines*. Each framework asks a different qu
 ## Quick Start
 
 ```bash
-claude plugin add askarzh/epistemator
+claude plugin marketplace add askarzh/epistemator
+claude plugin add epistemator
 ```
 
 ```
@@ -113,13 +114,14 @@ Works with `/epistemic` too — compare multiple lenses on the same piece:
 
 ## Installation
 
-Install directly from the Claude Code CLI:
+Add the marketplace and install:
 
 ```bash
-claude plugin add askarzh/epistemator
+claude plugin marketplace add askarzh/epistemator
+claude plugin add epistemator
 ```
 
-Or install manually by cloning and adding the plugin path:
+Or install manually by cloning:
 
 ```bash
 git clone https://github.com/askarzh/epistemator.git ~/.claude/plugins/epistemator
