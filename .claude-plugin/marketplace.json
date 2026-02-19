@@ -5,6 +5,9 @@
   "owner": {
     "name": "Askar"
   },
+  "metadata": {
+    "description": "Epistemic analysis tools — process ideas, texts, and questions through philosophical frameworks"
+  },
   "plugins": [
     {
       "name": "epistemator",
@@ -13,7 +16,7 @@
       "author": {
         "name": "Askar"
       },
-      "source": ".",
+      "source": "./",
       "category": "productivity",
       "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
     }
