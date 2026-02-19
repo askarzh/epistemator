@@ -1,4 +1,4 @@
-# Infotune: Epistemic Tools Plugin — Implementation Plan
+# Epistemator: Epistemic Tools Plugin — Implementation Plan
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
@@ -22,7 +22,7 @@ Create `.claude-plugin/plugin.json`:
 
 ```json
 {
-  "name": "infotune",
+  "name": "epistemator",
   "version": "0.1.0",
   "description": "Epistemic analysis tools — process ideas, texts, and questions through philosophical frameworks",
   "author": {
@@ -52,7 +52,7 @@ mkdir -p commands agents
 
 ```bash
 git add .claude-plugin/plugin.json .gitignore
-git commit -m "feat: scaffold infotune plugin structure"
+git commit -m "feat: scaffold epistemator plugin structure"
 ```
 
 ---

@@ -1,8 +1,8 @@
-# Infotune: Epistemic Tools Plugin — Design Document
+# Epistemator: Epistemic Tools Plugin — Design Document
 
 ## Overview
 
-Infotune is a standalone Claude Code plugin that processes input (concepts, documents, questions, problems) through epistemic frameworks. Users select a framework by slash command or use a meta-command to compare multiple frameworks.
+Epistemator is a standalone Claude Code plugin that processes input (concepts, documents, questions, problems) through epistemic frameworks. Users select a framework by slash command or use a meta-command to compare multiple frameworks.
 
 ## Frameworks
 
@@ -18,7 +18,7 @@ Infotune is a standalone Claude Code plugin that processes input (concepts, docu
 ### Plugin Structure
 
 ```
-infotune/
+epistemator/
   .claude-plugin/
     plugin.json
   skills/

@@ -1,3 +1,23 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Editors
 *.swp
 *.swo
+*~
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Claude Code
+.claude/settings.local.json
+.claude/statsig/
+.claude/todos/
+.claude/projects/
+*.local.md
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
