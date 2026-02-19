@@ -68,6 +68,24 @@ The `/epistemic` command runs multiple frameworks on the same input and produces
 
 The comparative synthesis includes: **Convergence** (where frameworks agree), **Divergence** (what each lens sees that others miss), **Synthesis** (insights only visible through multiple lenses), and **Meta-Observation** (what the pattern of agreement reveals about the nature of the question).
 
+### Analyzing Articles and Videos
+
+Pass a URL and Claude will fetch the content and run the analysis on it:
+
+```
+/scholastic https://paulgraham.com/greatwork.html
+/cartesian https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
+/pirsig https://www.youtube.com/watch?v=8pTEmbeENF4
+/lateral https://www.youtube.com/watch?v=UF8uR6Z6KLc
+```
+
+Works with `/epistemic` too — compare multiple lenses on the same piece:
+
+```
+/epistemic --compare https://paulgraham.com/superlinear.html
+/epistemic --pick https://www.youtube.com/watch?v=kYfNvmF0Bqw
+```
+
 ## Installation
 
 Install directly from the Claude Code CLI:
