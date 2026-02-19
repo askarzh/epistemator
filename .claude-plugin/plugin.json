@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Epistemic analysis tools — process ideas, texts, and questions through philosophical frameworks",
   "author": {
-    "name": "Askar"
+    "name": "Askar Zhakenov",
+    "email": "askar@zhakenov.pro"
   },
   "license": "MIT",
   "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
