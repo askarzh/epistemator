@@ -13,7 +13,10 @@
       "author": {
         "name": "Askar"
       },
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "askarzh/epistemator"
+      },
       "category": "productivity",
       "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
     }
