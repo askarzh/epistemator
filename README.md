@@ -24,20 +24,11 @@ Epistemator runs ideas through philosophical frameworks that do what summaries c
 
 ## Quick Start
 
-```bash
-claude plugin marketplace add askarzh/epistemator
-claude plugin add epistemator
-```
-
 ```
 /scholastic Is free will compatible with determinism?
 /sixhats Should we adopt microservices?
 /epistemic --compare https://paulgraham.com/greatwork.html
 ```
-
-## What It Does
-
-Epistemator is a Claude Code plugin that provides four philosophical analysis frameworks as slash commands. Each framework offers a different lens for examining a topic, and a meta-command lets you combine multiple frameworks for comparative analysis.
 
 ## Frameworks
 
@@ -155,7 +146,6 @@ commands/
   epistemic.md                # Multi-framework meta-command
 agents/
   epistemic-analyst.md         # Orchestrator agent
-docs/plans/                    # Design and implementation docs
 ```
 
 ## Adding a New Framework
