@@ -14,7 +14,7 @@ Epistemator is a Claude Code plugin that provides four philosophical analysis fr
 | `/cartesian` | Cartesian Reductionism (Descartes) | "What are the parts?" — systematic decomposition to first principles |
 | `/pirsig` | Metaphysics of Quality (Pirsig) | "What is better?" — analysis through static/dynamic quality patterns |
 | `/lateral` | Lateral Thinking (De Bono) | "What else could this be?" — breaking dominant patterns for new perspectives |
-| `/epistemator:epistemic` | Multi-framework orchestrator | Suggests, compares, or lets you pick frameworks |
+| `/epistemic` | Multi-framework orchestrator | Suggests, compares, or lets you pick frameworks |
 
 ## Usage
 
@@ -53,17 +53,17 @@ Think laterally about why our onboarding conversion is low
 
 ### Multi-Framework Analysis
 
-The `/epistemator:epistemic` command runs multiple frameworks on the same input and produces a comparative synthesis.
+The `/epistemic` command runs multiple frameworks on the same input and produces a comparative synthesis.
 
 ```
 # Auto-suggest best frameworks, ask for confirmation (default)
-/epistemator:epistemic Should our startup pivot to a subscription model?
+/epistemic Should our startup pivot to a subscription model?
 
 # Run all four frameworks in parallel
-/epistemator:epistemic --compare The tension between individual freedom and collective responsibility
+/epistemic --compare The tension between individual freedom and collective responsibility
 
 # Choose which frameworks to apply
-/epistemator:epistemic --pick Is democracy the best form of government?
+/epistemic --pick Is democracy the best form of government?
 ```
 
 The comparative synthesis includes: **Convergence** (where frameworks agree), **Divergence** (what each lens sees that others miss), **Synthesis** (insights only visible through multiple lenses), and **Meta-Observation** (what the pattern of agreement reveals about the nature of the question).
@@ -79,11 +79,11 @@ Pass a URL and Claude will fetch the content and run the analysis on it:
 /lateral https://www.youtube.com/watch?v=UF8uR6Z6KLc
 ```
 
-Works with `/epistemator:epistemic` too — compare multiple lenses on the same piece:
+Works with `/epistemic` too — compare multiple lenses on the same piece:
 
 ```
-/epistemator:epistemic --compare https://paulgraham.com/superlinear.html
-/epistemator:epistemic --pick https://www.youtube.com/watch?v=kYfNvmF0Bqw
+/epistemic --compare https://paulgraham.com/superlinear.html
+/epistemic --pick https://www.youtube.com/watch?v=kYfNvmF0Bqw
 ```
 
 ## Installation
@@ -101,7 +101,7 @@ git clone https://github.com/askarzh/epistemator.git ~/.claude/plugins/epistemat
 claude plugin add ~/.claude/plugins/epistemator
 ```
 
-After installation, restart Claude Code. The slash commands (`/scholastic`, `/cartesian`, `/pirsig`, `/lateral`, `/epistemator:epistemic`) will be available immediately.
+After installation, restart Claude Code. The slash commands (`/scholastic`, `/cartesian`, `/pirsig`, `/lateral`, `/epistemic`) will be available immediately.
 
 ## Project Structure
 
@@ -112,6 +112,7 @@ skills/
   cartesian/SKILL.md
   pirsig/SKILL.md
   lateral/SKILL.md
+  epistemic/SKILL.md
 commands/
   scholastic.md               # Slash command wrappers
   cartesian.md
