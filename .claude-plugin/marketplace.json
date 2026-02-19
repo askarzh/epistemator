@@ -5,6 +5,9 @@
     "name": "Askar Zhakenov",
     "email": "askar@zhakenov.pro"
   },
+  "metadata": {
+    "description": "Development marketplace for Epistemator core analysis skills - process ideas, texts, and questions through philosophical frameworks"
+  },
   "plugins": [
     {
       "name": "epistemator",
@@ -14,6 +17,7 @@
         "name": "Askar Zhakenov",
         "email": "askar@zhakenov.pro"
       },
+      "source": "./",
       "category": "productivity",
       "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
     }
