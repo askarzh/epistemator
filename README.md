@@ -116,14 +116,14 @@ Add the marketplace and install:
 
 ```bash
 claude plugin marketplace add askarzh/epistemator
-claude plugin add epistemator
+claude plugin install epistemator
 ```
 
 Or install manually by cloning:
 
 ```bash
 git clone https://github.com/askarzh/epistemator.git ~/.claude/plugins/epistemator
-claude plugin add ~/.claude/plugins/epistemator
+claude plugin install ~/.claude/plugins/epistemator
 ```
 
 After installation, restart Claude Code. The slash commands (`/scholastic`, `/cartesian`, `/pirsig`, `/sixhats`, `/epistemic`) will be available immediately.
