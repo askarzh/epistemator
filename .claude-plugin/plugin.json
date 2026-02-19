@@ -6,6 +6,8 @@
     "name": "Askar Zhakenov",
     "email": "askar@zhakenov.pro"
   },
+  "homepage": "https://github.com/askarzh/epistemator",
+  "repository": "https://github.com/askarzh/epistemator",
   "license": "MIT",
   "keywords": ["epistemology", "analysis", "philosophy", "thinking-tools"]
 }
