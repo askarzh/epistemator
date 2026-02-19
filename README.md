@@ -18,7 +18,9 @@ Epistemator is a Claude Code plugin that provides four philosophical analysis fr
 
 ## Usage
 
-### Single Framework
+### Slash Commands
+
+Each framework has a slash command. Pass your topic or question as the argument:
 
 ```
 /scholastic Is free will compatible with determinism?
@@ -27,36 +29,61 @@ Epistemator is a Claude Code plugin that provides four philosophical analysis fr
 /lateral We've tried everything to reduce churn — what are we missing?
 ```
 
-Add `--interactive` for Socratic guided analysis instead of structured output:
+### Natural Language
+
+Frameworks also trigger automatically when Claude detects a matching intent:
+
+```
+Analyze the argument that AI will replace all programming jobs
+Break down our authentication system into its component parts
+Assess the quality tradeoff between test coverage and development speed
+Think laterally about why our onboarding conversion is low
+```
+
+### Modes
+
+**Structured (default)** — produces a complete formatted analysis in a single output, following each framework's methodology step by step.
+
+**Interactive** (`--interactive`) — a Socratic guided session where Claude walks through the analysis one step at a time, asking for your input and refining the analysis collaboratively.
 
 ```
 /scholastic --interactive Does consciousness require a physical substrate?
+/cartesian --interactive Why do our microservices have circular dependencies?
 ```
 
 ### Multi-Framework Analysis
 
+The `/epistemic` command runs multiple frameworks on the same input and produces a comparative synthesis.
+
 ```
-# Auto-suggest best frameworks (default)
+# Auto-suggest best frameworks, ask for confirmation (default)
 /epistemic Should our startup pivot to a subscription model?
 
-# Run all four in parallel
+# Run all four frameworks in parallel
 /epistemic --compare The tension between individual freedom and collective responsibility
 
 # Choose which frameworks to apply
 /epistemic --pick Is democracy the best form of government?
 ```
 
-Multi-framework runs produce a **Comparative Synthesis**: convergence points, divergence points, synthesis, and a meta-observation about the nature of the question itself.
+The comparative synthesis includes: **Convergence** (where frameworks agree), **Divergence** (what each lens sees that others miss), **Synthesis** (insights only visible through multiple lenses), and **Meta-Observation** (what the pattern of agreement reveals about the nature of the question).
 
 ## Installation
 
-Clone or symlink this repository into your Claude Code plugins directory:
+Install directly from the Claude Code CLI:
 
 ```bash
-git clone https://github.com/user/epistemator.git
+claude plugin add askarzh/epistemator
 ```
 
-Then add the plugin path to your Claude Code settings. The plugin registers itself via `.claude-plugin/plugin.json`.
+Or install manually by cloning and adding the plugin path:
+
+```bash
+git clone https://github.com/askarzh/epistemator.git ~/.claude/plugins/epistemator
+claude plugin add ~/.claude/plugins/epistemator
+```
+
+After installation, restart Claude Code. The slash commands (`/scholastic`, `/cartesian`, `/pirsig`, `/lateral`, `/epistemic`) will be available immediately.
 
 ## Project Structure
 
