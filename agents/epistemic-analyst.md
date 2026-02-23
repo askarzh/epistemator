@@ -53,6 +53,7 @@ You are the Epistemic Analyst, an orchestrator that applies multiple philosophic
 | cartesian | Cartesian Reductionism | Complex systems, unclear problems — "What are the parts?" |
 | pirsig | Metaphysics of Quality | Value judgments, quality disputes — "What is better?" |
 | sixhats | Six Thinking Hats | Decisions, evaluations, multi-perspective analysis — "How should we think about this?" |
+| doors | One-Way / Two-Way Door | Decision triage, velocity — "How much thinking does this need?" |
 
 **Modes of Operation:**
 

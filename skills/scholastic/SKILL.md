@@ -1,39 +1,36 @@
 ---
 name: scholastic
 description: This skill should be used when the user asks to "analyze an argument", "apply scholastic method", "use quaestio disputata", "examine a thesis", "find objections and replies", "apply Thomistic analysis", or wants to process input through the Modern Scholastic framework of structured disputation.
-version: 0.1.0
+version: 0.3.0
 ---
 
 # Modern Scholastic Analysis
 
 ## Overview
 
-Apply the quaestio disputata method — the structured disputation framework refined by Thomas Aquinas and the medieval Scholastics. This method systematically examines a proposition by articulating the strongest possible objections, then responding to each with precise distinctions.
+A modern adaptation of the quaestio disputata — the structured disputation framework originating with Thomas Aquinas. This method systematically examines a proposition by articulating the strongest possible objections, then responding to each with precise distinctions.
+
+Unlike the medieval form, this modern adaptation does not presuppose a shared metaphysical or theological framework. It incorporates empirical evidence, surfaces hidden epistemological assumptions, and is designed to be legible across philosophical traditions.
 
 The Scholastic method excels at analyzing arguments, claims, propositions, and any input where the goal is to determine the truth or validity of a position through rigorous dialectical examination.
 
 ## Core Methodology
 
-1. **Formulate the Question (Quaestio)** — Convert the input into a precise yes/no question or a clearly stated thesis. The question must be specific enough to admit determinate answers.
+1. **Formulate the Question (Quaestio)** — Convert the input into a precise question or clearly stated thesis. The question may be yes/no ("Whether X is the case?"), comparative ("Whether X is better than Y?"), or explanatory ("What accounts for X?"). It must be specific enough to admit determinate answers.
 
-2. **Present the Thesis (Videtur Quod)** — State the initial position to be examined. Present it as a defensible claim with its strongest supporting reasons.
+2. **Raise Objections (Objectiones)** — Construct 3-5 steel-manned objections against the position under examination. Each objection must be the strongest possible case, not a straw man. Apply the principle of charity: formulate each objection as a thoughtful interlocutor would.
 
-3. **Raise Objections (Objectiones)** — Construct 3-5 steel-manned objections against the thesis. Each objection must be the strongest possible case against the position, not a straw man. Apply the principle of charity: formulate each objection as a thoughtful interlocutor would.
+3. **Determine the Response (Respondeo)** — The master's own voice. Open with the strongest counter-argument (the traditional sed contra pivot), then provide the main analysis and resolution. Address each objection individually, showing exactly where it succeeds, fails, or requires qualification. Use precise distinctions (distinguo) to resolve apparent contradictions. Use the formal distinction pattern: "The objection holds insofar as X, but fails insofar as Y."
 
-4. **Offer the Sed Contra** — Present the counter-authority or counter-argument that supports the thesis against the objections. This is typically the strongest single reason favoring the thesis.
-
-5. **Determine the Response (Respondeo)** — Provide the main analysis and resolution. This is not a compromise between thesis and objections but a deeper understanding that addresses why the objections fail or succeed. Use precise distinctions (distinguo) to resolve apparent contradictions.
-
-6. **Reply to Each Objection (Ad Objectiones)** — Address each objection individually, showing exactly where it succeeds, fails, or requires qualification. Use the formal distinction pattern: "The objection holds insofar as X, but fails insofar as Y."
-
-7. **Final Determination (Determinatio)** — Synthesize the analysis into a clear, qualified conclusion. State what has been established, what remains uncertain, and what further questions arise.
+4. **Final Determination (Determinatio)** — Synthesize the analysis into a clear, qualified conclusion. State what has been established, what remains uncertain, and what further questions arise. Include a **confidence rating** (0.0–1.0) indicating how strongly the analysis supports the determination, with a brief justification for the rating.
 
 ## Key Concepts
 
-- **Distinguo (Distinction):** The primary analytical tool. When a claim appears both true and false, distinguish the senses in which it is each. Example: "The claim is true in the formal sense but false in the material sense."
+- **Distinguo (Distinction):** The primary analytical tool. When a claim appears both true and false, distinguish the senses in which it is each. Types of distinction include: formal/material, absolute/relative, per se/per accidens, and where appropriate, formalize using symbolic logic (e.g., ∀x(Fx → Gx) vs. ∃x(Fx ∧ ¬Gx)) to make the logical structure of a distinction explicit.
 - **Principle of Charity:** Every objection must be constructed at maximum strength. Weak objections produce weak analysis.
-- **Sed Contra vs. Respondeo:** The sed contra is a single authoritative counter-point; the respondeo is the full analytical resolution. They serve different functions.
 - **Qualification over Refutation:** The goal is rarely to completely destroy a position but to determine the precise conditions under which it holds or fails.
+- **Epistemological Self-Awareness:** Unlike medieval Scholasticism, the modern method cannot take metaphysical realism or any epistemic framework as a shared starting point. When an argument presupposes a contested epistemological position (e.g., that essences are real, that final causes exist, that moral facts are knowable), surface the presupposition explicitly and address it. The analysis should be legible to interlocutors who do not share its premises.
+- **Empirical Integration:** Incorporate relevant scientific and empirical evidence as data within the analysis. Treat empirical findings the way medieval Scholastics treated Aristotelian natural philosophy — as the best available account of how things are, subject to philosophical interpretation but not to be dismissed or ignored.
 
 ## Analysis Protocol
 
@@ -45,9 +42,6 @@ Produce the analysis in this exact section order:
 ## Quaestio
 [The precise question under examination]
 
-## Videtur Quod (Thesis)
-[The position and its supporting reasons]
-
 ## Objectiones
 ### Objection 1
 [Steel-manned objection]
@@ -56,15 +50,11 @@ Produce the analysis in this exact section order:
 ### Objection 3
 [Steel-manned objection]
 
-## Sed Contra
-[The strongest counter-authority or counter-argument]
-
 ## Respondeo
-[Main analysis with distinctions]
+[Open with the strongest counter-argument (sed contra pivot), then main analysis.]
 
-## Ad Objectiones
 ### Reply to Objection 1
-[Precise reply using distinctions]
+[Precise reply using distinctions: "The objection holds insofar as X, but fails insofar as Y."]
 ### Reply to Objection 2
 [Precise reply using distinctions]
 ### Reply to Objection 3
@@ -72,6 +62,8 @@ Produce the analysis in this exact section order:
 
 ## Determinatio
 [Final qualified conclusion]
+
+**Confidence: [0.0–1.0]** — [Brief justification for the rating]
 ```
 
 ### Interactive Mode
@@ -81,9 +73,16 @@ When the user requests interactive/Socratic analysis:
 1. Begin by asking the user to state their position or question clearly
 2. Help refine the quaestio through clarifying questions
 3. Present one objection at a time and ask the user to respond before offering the next
-4. After all objections are raised, present the sed contra and ask for the user's initial synthesis
-5. Offer the respondeo as a collaborative refinement of the user's thinking
-6. Conclude with the determinatio, noting where the user's understanding evolved
+4. After all objections are raised, offer the respondeo as a collaborative refinement of the user's thinking, addressing each objection with distinctions
+5. Conclude with the determinatio, noting where the user's understanding evolved
+
+## Example
+
+A brief example illustrating the objection–reply pattern with a distinction:
+
+> **Objection:** Free will is impossible because every event has a prior cause, and human decisions are events. Therefore all decisions are determined.
+>
+> **Reply:** The objection holds insofar as human decisions are events with causal antecedents (*per accidens* — as physical processes, they participate in causal chains). But it fails insofar as it equates causal influence with causal determination (*per se* — the claim that prior causes *necessitate* a unique outcome is a further metaphysical commitment, not entailed by causation alone). Distinguo: "every event has a prior cause" is true in the sense that every event has *contributing* causes, but not in the sense that every event has *sufficient and necessitating* causes.
 
 ## When to Apply This Framework
 
